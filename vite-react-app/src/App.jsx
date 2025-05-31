@@ -3,6 +3,7 @@ import Header from "./layout/Header"
 import PageContent from "./layout/PageContent"
 import Footer from "./layout/Footer"
 import HomePage from "./pages/HomePage"
+import ShopPage from "./pages/ShopPage"
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <PageContent>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/shop" element={<div className="p-8 text-center">Shop Page - Coming Soon</div>} />
+            <Route path="/shop" element={<ShopPage />} />
             <Route path="/about" element={<div className="p-8 text-center">About Page - Coming Soon</div>} />
             <Route path="/contact" element={<div className="p-8 text-center">Contact Page - Coming Soon</div>} />
           </Routes>
